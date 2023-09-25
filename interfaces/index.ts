@@ -16,3 +16,7 @@ export interface FeedItemProps {
 export interface TodoItemProps {
     status: "Daily" | "Work" | "Projects" | "Ideas";
 }
+
+export interface ModalProps {
+    status: string;
+}
