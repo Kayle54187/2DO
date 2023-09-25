@@ -19,11 +19,11 @@ export default function DashboardLayout({
     <div>
       <NavBar/>
     </div>
-    <main className='flex-1 mt-20 mb-20 grid grid-cols-2'>
-      <div>
+    <main className='flex-1 mt-20 mb-20 grid grid-rows-2 xl:grid-rows-1 xl:grid-cols-2'>
+      <div className='pb-10 xl:pb-0'>
         <StatsSection/>
       </div>
-      <div>
+      <div className='mt-16 xl:pb-0'>
         {children}
       </div>
     </main>
