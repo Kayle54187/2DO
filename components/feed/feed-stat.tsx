@@ -1,5 +1,6 @@
 import AvatarComponent from "@/components/avatar";
 import { AvatarComponentProps } from "@/interfaces";
+import Modal from "@/components/modal";
 
 
 
@@ -14,7 +15,7 @@ const FeedStat = ({ completion_rate, status }: AvatarComponentProps) => {
                 </div>
             </div>
             <div>
-                <button className="px-2 py-3 bg-[#2196F3] text-white rounded-[10px]">Add to {status}</button>
+                <Modal status={status}/>
             </div>
         </div>
     );
